@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Posso comer qualquer alimento?" />
+    <meta name="author" content="SESI" />
+    <title>Aula 09 | Por onde o alimento passa ao entrar no corpo?</title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.png" />
+
+    <!-- Fonts Gamay Editorial -->
+    <link rel="stylesheet" href="https://use.typekit.net/gfu5jar.css" />
+
+    <!--Import Google Icon Font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js" defer></script>
+    <script src="src/js/scorm/SCOFunctions.js" defer></script>
+    <script src="src/js/scorm/scorm-app.js" defer></script>
+
+    <link rel="preload" href="src/img/Hero-m.webp" as="image" />
+    <link rel="preload" href="src/img/Hero-s.webp" as="image" />
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer
+    ></script>
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <!-- Sidebar ---------------------------------- -->
+        <sidebar></sidebar>
+
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
+
+        <!-- Hero Banner ---------------------------------- -->
+        <hero>Por onde o alimento passa ao entrar no corpo?​</hero>
+
+        <!-- Primeiro Conteúdo ---------------------------------- -->
+        <div class="top-rounded pt-80 pb-60">
+          <div class="container--medium">
+            <h2 class="mb-40 purple-text center-align" data-aos="zoom-in">
+              Bem-vindo de volta!
+            </h2>
+
+            <img-side-card src="src/img/gif-01.webp" alt="Bem-vindo de volta!">
+              <p>
+                Nas últimas aulas, conhecemos todos os nutrientes, além dos
+                alimentos onde os encontramos.​
+              </p>
+              <br />
+              <p>Já sabemos também qual a função de cada nutriente…​</p>
+            </img-side-card>
+
+            <div class="row mt-60">
+              <div class="col l9 m8 s12">
+                <p class="body1 purple-text"><b>Agora...</b></p>
+                <p>
+                  Vamos entender por onde esse alimento passa para que seja
+                  digerido e absorvido.
+                </p>
+              </div>
+              <div class="col l3 m4 s12 flex--justify-center">
+                <img
+                  class="circle"
+                  src="src/img/gif-02.webp"
+                  alt="Hipopótamo"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Introdução ------------------------------------>
+        <div id="introducao" class="purple-blue-bg pb-80">
+          <img src="src/img/Section-wave.svg" class="custom-divider__wave mb-24" alt="wave">
+          <div class="container">
+            <div class="box-attention box-attention--green">
+              <h3 class="purple-text center-align">
+                Para começar...
+                <br /><br />
+                Responde aí! O que é o sistema digestório?
+              </h3>
+            </div>
+
+            <div class="row py-40">
+              <div class="col m5 s12">
+                <p class="body1 green-text">
+                  <b>Respondendo…​</b>
+                </p>
+                <p class="white-text">
+                  Bom, sistema você já aprendeu, certo?​ Sistema é um conjunto
+                  de órgãos que realizam uma mesma atividade.​
+                </p>
+                <p class="white-text">
+                  Logo, o sistema digestório é um conjunto de órgãos que
+                  participa da digestão.
+                </p>
+              </div>
+              <div class="col m7 s12">
+                <img
+                  src="src/img/static-01.webp"
+                  class="img--round"
+                  alt="Corpo humano"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-60">
+              <div class="col m5 s12">
+                <img
+                  src="src/img/gif-03.webp"
+                  class="img--round"
+                  alt="SIstema digestório"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m7 s12 flex--align-center">
+                <p class="white-text">
+                  E a digestão é o conjunto de transformações sofridas pelo
+                  alimento para que os nutrientes sejam absorvidos.
+                  <br />
+                  <br />
+                  (essa parte a gente vê na próxima aula!)
+                </p>
+              </div>
+            </div>
+
+            <div id="orgaos" class="row">
+              <div class="col m8 s12">
+                <div class="box-attention box-attention--green">
+                  <h3 class="purple-text">
+                    Agora...
+                    <br /><br />
+                    Faça uma lista dos órgãos do sistema digestório que você
+                    conhece.
+                    <br /><br />
+
+                    Valendo!
+                  </h3>
+                </div>
+              </div>
+              <div class="col m4 s12">
+                <img
+                  src="src/img/gif-04.webp"
+                  class="img--round"
+                  alt="Digitando"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="content-reveal cr-01">
+              <div class="flex--justify-center my-80">
+                <a
+                  @click="pulseReview('cr-01')"
+                  style="background-color: #deff59; color: #3d4d58"
+                  href="#/"
+                  class="btn-large filled waves-effect waves-light bubbly-button"
+                  >Respondeu?
+                  <span class="ml-4" style="font-size: 24px;">
+                    👀
+                  </span>
+                  <!-- <span class="material-symbols-rounded"> visibility_off </span> -->
+                </a>
+              </div>
+
+              <div class="row mb-40 scale-transition scale-out">
+                <div class="col m5 s12">
+                  <img
+                    src="src/img/gif-05.webp"
+                    class="img--round"
+                    alt="Frajola preocupado"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col m7 s12 white-text flex--align-center">
+                  <div>
+                    <p>
+                      Tenho certeza de que você se lembrou do estômago, do
+                      intestino, da boca…
+                    </p>
+                    <p>e eles são mesmo!</p>
+                    <p>
+                      <b
+                        >Agora, faça um passo a passo do caminho do alimento, do
+                        momento em que ele entra pela boca, até o momento em que
+                        os restos saem.</b
+                      >
+                    </p>
+                    <p><u style="border-color: #deff59">Estou esperando!</u></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container--medium">
+            <questions></questions>
+          </div>
+        </div>
+
+        <!-- Orgaos ------------------------------------>
+        <div class="py-80">
+          <div class="container--medium">
+            <!-- Boca -->
+            <div id="boca" class="row mb-60">
+              <div class="col m5 s12">
+                <img
+                  src="src/img/gif-07.webp"
+                  class="img--round"
+                  alt="Hipopótamo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m7 s12 flex--align-center">
+                <div>
+                  <h3 class="blue-text" data-aos="zoom-in">Boca</h3>
+                  <p>
+                    A boca é a entrada do sistema digestório. Dentro da boca,
+                    encontramos os dentes, a língua e as glândulas salivares,
+                    que vão realizar a primeira parte da digestão. Aqui, o
+                    alimento é transformado em um bolo que vai para a… 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="purple-text mb-40">
+              <span style="font-size: 28px;">👉</span>
+              <b> Interaja com os pontos para saber mais </b></p>
+            
+            <!-- Faringe e Esôfago-->
+            <div id="faringe" class="row">
+              <div class="col m6 s12">
+                <h3 class="orange-purple-text mb-24" data-aos="zoom-in">Faringe</h3>
+              </div>
+              <div class="col m1 s12"></div>
+              <div class="col m5 s12">
+                <h3 class="purple-blue-text mb-24" data-aos="zoom-in">Esôfago</h3>
+              </div>
+            </div>
+            <div class="row mb-60">
+              <div class="bullet-reveal col m6 s12">
+                <!-- Bullet -->
+                <a
+                  data-aos="fade-up"
+                  class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                  data-html="true"
+                  data-position="bottom"
+                  data-tooltip-id="bullet-01"
+                  style="left: 65%; top: 60%"
+                >
+                  <div id="bullet-01" style="display: none">
+                    <p class="white-text" style="font-size: 13.5px">
+                      A faringe é a comunicação entre o sistema digestório e o
+                      respiratório. Sabe quando você engasga com uma bebida e
+                      ela sai pelo nariz? Sim, isso acontece porque a faringe
+                      conecta a boca e o nariz…
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Bullet -->
+                <a
+                  data-aos="fade-up"
+                  class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                  data-html="true"
+                  data-position="bottom"
+                  data-tooltip-id="bullet-02"
+                  style="left: 60%; top: 75%"
+                >
+                  <div id="bullet-02" style="display: none">
+                    <p class="white-text" style="font-size: 13.5px">
+                      E o que garante que o bolo de alimento não entre no
+                      sistema respiratório? Existe uma estrutura chamada
+                      epiglote, que fecha a abertura do sistema respiratório
+                      para o alimento passar.
+                    </p>
+                  </div>
+                </a>
+                <img
+                  src="src/img/static-03.webp"
+                  class="img--round"
+                  alt="Faringe"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m1 s12"></div>
+              <div class="bullet-reveal col m5 s12">
+                <!-- Bullet -->
+                <a
+                  data-aos="fade-up"
+                  class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                  data-html="true"
+                  data-position="bottom"
+                  data-tooltip-id="bullet-03"
+                  style="left: 43%; top: 25%"
+                >
+                  <div id="bullet-03" style="display: none">
+                    <p class="white-text" style="font-size: 13.5px">
+                      Ao passar pela faringe, o bolo de alimento cai no esôfago.
+                      O esôfago é um grande tubo que leva a comida da boca para
+                      o próximo órgão que participa da digestão.
+                    </p>
+                  </div>
+                </a>
+                <img
+                  src="src/img/static-04.jpg"
+                  class="img--round"
+                  alt="Faringe"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Estômago -->
+            <div id="estomago" class="row mb-60">
+              <div class="col m6 s12">
+                <h3 class="orange-text" data-aos="zoom-in">Estômago</h3>
+                <p>
+                  O esôfago leva a comida ao estômago. Nesse órgão, que parece
+                  uma bolsa, são lançadas substâncias que ajudarão na digestão
+                  do alimento.
+                </p>
+                <p>
+                  Quando você ouvir ou ler a palavra “gástrico”, saiba que se
+                  trata de algo que ocorre neste órgão.
+                </p>
+              </div>
+              <div class="col m6 s12">
+                <img
+                  src="src/img/static-05.jpg"
+                  class="img--round"
+                  alt="Estômago"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Intestino -->
+            <div id="intestino" class="row my-60">
+              <div class="bullet-reveal col m6 s12">
+                <!-- Bullet -->
+                <a
+                  data-aos="fade-up"
+                  class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                  data-html="true"
+                  data-position="bottom"
+                  data-tooltip-id="bullet-04"
+                  style="left: 50%; top: 40%"
+                >
+                  <div id="bullet-04" style="display: none">
+                    <p class="white-text" style="font-size: 13.5px">
+                      O intestino delgado é um tubo em que ocorre o final da
+                      digestão. Nessa parte também ocorre a absorção dos
+                      nutrientes. Aqui os carboidratos e todos os outros
+                      nutrientes entram no nosso corpo.
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Bullet -->
+                <a
+                  data-aos="fade-up"
+                  class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                  data-html="true"
+                  data-position="bottom"
+                  data-tooltip-id="bullet-05"
+                  style="left: 25%; top: 30%"
+                >
+                  <div id="bullet-05" style="display: none">
+                    <p class="white-text" style="font-size: 13.5px">
+                      A segunda parte do intestino é chamada de intestino
+                      grosso. Não, ele não é tão longo. Ele só tem, em média,
+                      1,5 metro. A parte final é uma abertura denominada ânus.
+                    </p>
+                  </div>
+                </a>
+                <img
+                  src="src/img/static-06.webp"
+                  class="img--round"
+                  alt="Estômago"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <h3 class="purple-text" data-aos="zoom-in">Intestino</h3>
+                  <p>
+                    Saindo do estômago, a comida chega ao intestino. Nosso
+                    intestino é dividido em duas partes: intestino delgado e
+                    intestino grosso.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box-attention box-attention--purple box-attention--image mb-60 flex--align-center"
+            >
+              <img
+                src="src/img/gif-08.webp"
+                class="img--round mr-16"
+                alt="Estômago"
+                loading="lazy"
+                style="max-width: 120px; border-radius: 5px"
+              />
+              <p class="purple-text m-0">
+                <b>
+                  Você sabia que a primeira parte do intestino, o intestino
+                  delgado, possui cerca de 6 metros de comprimento?
+                </b>
+              </p>
+            </div>
+
+
+            <!-- Fezes -->
+            <div id="fezes" class="row">
+              <div class="col m6 s12 flex--align-center">
+                <div>
+                  <p class="body1 purple-blue-text"><b>Fezes?</b></p>
+                  <p>Sim… você sabe o que são as fezes! →</p>
+                  <p>
+                    Lembrando que o sistema digestório só elimina as fezes,
+                    enquanto a urina é liberada pelo sistema urinário, que é o
+                    sistema que filtra o sangue.
+                  </p>
+                </div>
+              </div>
+              <div class="col m6 s12">
+                <img
+                  src="src/img/gif-09.webp"
+                  class="img--round"
+                  alt="Fezes"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caminho ------------------------------------>
+
+        <div id="caminho" class="pt-80">
+          <div class="container--medium">
+            <div class="row mb-60">
+              <div class="col m8 s12">
+                <div class="box-attention box-attention--green">
+                  <h3 class="purple-text" data-aos="zoom-in">
+                    Então...
+                    <br /><br />
+                    O caminho completo é este aqui:
+                  </h3>
+                </div>
+              </div>
+              <div class="col m4 s12">
+                <img
+                  src="src/img/gif-10.webp"
+                  class="img--round"
+                  alt="O caminho completo"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row mb-60">
+              <div class="col m7 s12 flex--align-start">
+                <div class="card card--purple-shadow mr-24">
+                  <div class="card-content">
+                    <img
+                      src="src/img/static-07.jpg"
+                      class="img--round"
+                      alt="Pâncreas"
+                      loading="lazy"
+                    />
+                    <span class="card-title center-align">Pâncreas</span>
+                  </div>
+                </div>
+                <div class="card card--purple-shadow">
+                  <div class="card-content">
+                    <img
+                      src="src/img/static-08.jpg"
+                      class="img--round"
+                      alt="Fígado"
+                      loading="lazy"
+                    />
+                    <span class="card-title center-align">Fígado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col m5 s12">
+                <h3 class="purple-blue-text" data-aos="zoom-in">Calma, ainda não acabou…</h3>
+                <p>
+                  Vimos o caminho que o alimento faz no tubo digestório. Porém,
+                  existem duas glândulas que também fazem parte do sistema, mas
+                  o alimento não passa dentro delas.
+                </p>
+                <p>
+                  O pâncreas e o fígado são responsáveis por liberar substâncias
+                  no intestino que ajudam na digestão.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="center-align flex--align-center flex--column"
+              style="max-width: 470px; margin: auto"
+            >
+              <div>
+                <h3 class="purple-text" data-aos="zoom-in">O que rolou nesta aula?</h3>
+                <p>
+                  Hoje vimos o caminho realizado pelo alimento, da boca até ser
+                  eliminado nas fezes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <img src="src/img/section-soft.svg" class="custom-divider__wave mt-0" alt="wave" style="margin-bottom: -6px;">
+
+        </div>
+
+        <!-- Reflexao ------------------------------------>
+        <div id="reflexao" class="my-80">
+          <div class="container">
+            <div class="box-attention box-attention--green mb-24">
+              <h3 data-aos="zoom-in" class="body1 purple-text">
+                É hora da reflexão!
+              </h3>
+            </div>
+            <div class="row">
+              <div class="col m8 s12">
+                <div class="box-attention box-attention mb-24">
+                  <p>
+                    <b>
+                      1. Você conhecia todos os órgãos do sistema digestório?
+                    </b>
+                  </p>
+                </div>
+                <div class="box-attention box-attention mb-24">
+                  <p>
+                    <b>
+                      2. Você tem algum problema recorrente relacionado a algum
+                      desses órgãos?
+                    </b>
+                  </p>
+                </div>
+                <div class="box-attention box-attention">
+                  <p>
+                    <b>
+                      3. Você quer saber mais sobre algum dos temas abordados?
+                    </b>
+                  </p>
+                </div>
+              </div>
+              <div class="col m4 s12 flex--align-center">
+                <img
+                  src="src/img/gif-11.webp"
+                  class="img--round"
+                  alt="Reflexão"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proxima Aula ------------------------------------>
+        <div id="proxima">
+          <div
+            class="container--medium center-align flex--align-center flex--column"
+          >
+            <div style="max-width: 470px">
+              <h3 class="purple-text" data-aos="zoom-in">Na próxima aula…</h3>
+              <p>
+                Falaremos sobre a digestão… como o alimento será reduzido para
+                ser absorvido?
+              </p>
+            </div>
+
+            <div>
+              <p class="body1">
+                <b> Valeu! Falou! </b>
+              </p>
+            </div>
+            <img
+              src="src/img/gif-12.webp"
+              class="img--round"
+              alt="Valeu! Falou!"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Concluir ---------------------------------- -->
+        <concluir></concluir>
+
+        <!-- Footer ---------------------------------- -->
+
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </body>
+</html>
